@@ -119,7 +119,7 @@ df$Handicap0 <- ifelse(df$Handicap==0,1,0);df$Handicap1 <- ifelse(df$Handicap==1
 df$Handicap2 <- ifelse(df$Handicap==2,1,0);df$Handicap3 <- ifelse(df$Handicap==3,1,0)
 df$Handicap4 <- ifelse(df$Handicap==4,1,0)
 
-dataset <- df[,c('Age','Handicap',
+dataset <- df[,c('Age','Handicap0','Handicap1','Handicap2','Handicap3',
                  'SMS_received','Scholarship','Hypertension','Diabetes','No.show')]
 
 #5b) Train/test (75/25)----
